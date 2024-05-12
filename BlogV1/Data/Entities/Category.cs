@@ -8,7 +8,9 @@ namespace BlogV1.Data.Entities
 
         [MaxLength(50)]
         public required string Name { get; set; }
-        public string? Slug { get; set; }
+
+		[MaxLength(75)]
+		public string? Slug { get; set; }
         public bool ShowOnNavbar { get; set; }
     }
 }
